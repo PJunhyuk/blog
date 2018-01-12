@@ -50,8 +50,8 @@ $ git push origin master
 
 ```
 $ hexo clean
-$ hexo generate
-$ hexo deploy
+$ hexo g
+$ hexo d
 ```
 
 처음에는 좀 깨져 보일 수 있는데, (css 로딩이 늦어서 그런 것 같습니다) 한 5분 정도 기다린 후 새로고침하니 잘 되는 것을 확인할 수 있었습니다.  

@@ -98,11 +98,12 @@ deploy:
 $ npm install hexo-deployer-git --save
 ```
 
-다음의 명령어를 통해 repository를 clean 한 후 배포합니다. d, -g 태그는 각각 deploy와 generate의 약자입니다.
+다음의 명령어를 통해 repository를 clean 한 후 배포합니다. g와 d는 각각 generate와 deploy의 약자입니다.
 
 ```
 $ hexo clean
-$ hexo d -g
+$ hexo g
+$ hexo d
 ```
 
 끝입니다!  
