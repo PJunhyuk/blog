@@ -109,6 +109,18 @@ $ hexo d
 끝입니다!  
 GitHub 웹의 repository에서 branch를 gh-pages로 수정한 후 보면 방금 한 것들이 commit 되어 있는 것을 확인할 수 있습니다. 이제 <code>https://<개인/팀계정>.github.io/blog</code> 의 링크에 블로그가 설치된 것을 확인하실 수 있습니다!
 
+### GitHub 재업로드
+설치가 완료되었습니다! 변경 사항을 다음의 명령어를 통해 GitHub에 업로드합니다.  
+
+```
+$ git add *
+$ git commit -m "Install hueman"
+$ git push origin master
+```
+
+### SourceTree 적용
+SourceTree를 사용하여 Hexo 프로젝트를 관리하기 위해서는 로컬 폴더를 지운 후 GitHub에서 다시 받아와야 합니다. 로컬 파일들을 위의 GitHub 명령어를 활용하여 서버에 잘 업로드 한 후, 폴더를 삭제합니다. 그 후 SourceTree에 들어가서 ```새로 만들기 - URL에서 복제```를 통해 로컬 폴더에 동기화합니다.  
+
 ###### References
 [Github으로 개인페이지 만들기](http://jooooon.com/blog/2017/09/30/create-a-personal-page-with-github/)  
 [Hexo+GitHub pages](https://simhyejin.github.io/2016/06/20/hexo-github-pages/)  
