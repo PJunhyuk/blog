@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://PJunhyuk.github.io/blog/2018/01/12/Hexo로-GitHub-Pages에-Blog-설치/index.html">
 <meta property="og:site_name" content="PJunhyuk-blog">
 <meta property="og:description" content="GitHub Pages에 Hexo를 설치해봅시다. Hexo란?Hexo는 Node.js 기반의 블로그 프레임워크입니다. Hexo 공식 소개를 살펴보면 Hexo가 무엇인지 쉽게 알 수 있습니다.  Hexo is a fast, simple &amp;amp; powerful blog framework powered by Node.js.  DependenciesNode.j">
-<meta property="og:updated_time" content="2018-01-12T02:19:10.349Z">
+<meta property="og:updated_time" content="2018-01-12T02:21:04.315Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo로 GitHub Pages에 Blog 설치">
 <meta name="twitter:description" content="GitHub Pages에 Hexo를 설치해봅시다. Hexo란?Hexo는 Node.js 기반의 블로그 프레임워크입니다. Hexo 공식 소개를 살펴보면 Hexo가 무엇인지 쉽게 알 수 있습니다.  Hexo is a fast, simple &amp;amp; powerful blog framework powered by Node.js.  DependenciesNode.j">
@@ -177,19 +177,19 @@
 </a>  </p>
 <h3 id="ETC"><a href="#ETC" class="headerlink" title="ETC"></a>ETC</h3><p>손쉬운 설치를 위해 hexo 관련 몇몇 npm 패키지를 설치하여야 합니다.  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><h3 id="blog-설치"><a href="#blog-설치" class="headerlink" title="blog 설치"></a>blog 설치</h3><h4 id="Hexo-설치"><a href="#Hexo-설치" class="headerlink" title="Hexo 설치"></a>Hexo 설치</h4><p>Hexo를 사용하여 개인/팀 블로그를 설치해보도록 하겠습니다. 원하는 그림은 <code>https://&lt;개인/팀계정&gt;.github.io/blog</code> 에 Hexo blog가 설치되는 것입니다.<br>workspace 폴더에서 다음의 명령어를 실행합니다.</p>
+<h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><h3 id="Hexo-설치"><a href="#Hexo-설치" class="headerlink" title="Hexo 설치"></a>Hexo 설치</h3><p>Hexo를 사용하여 개인/팀 블로그를 설치해보도록 하겠습니다. 원하는 그림은 <code>https://&lt;개인/팀계정&gt;.github.io/blog</code> 에 Hexo blog가 설치되는 것입니다.<br>workspace 폴더에서 다음의 명령어를 실행합니다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br></pre></td></tr></table></figure>
 <p>그러면 폴더 내부에 blog라는 폴더가 생성됩니다. node modules 설치를 진행합니다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd blog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 <p>기본적인 Hexo 설치가 완료되었습니다!</p>
-<h4 id="GitHub-세팅"><a href="#GitHub-세팅" class="headerlink" title="GitHub 세팅"></a>GitHub 세팅</h4><p>GitHub Pages 사용을 위해서는 위에서 사용한 개인/팀의 계정에 blog라는 repository를 만들어야 합니다. GitHub 사이트에 접속하여 New를 누르고, blog라는 이름의 repository를 만들어줍시다. 이 때 README.md나 .gitignore과 같은 파일은 생성하지 않습니다.<br>이제 앞서 설치해놓은 Hexo를 GitHub repository에 업로드해야합니다. blog 폴더로 이동하여 다음의 명령어를 입력합니다.</p>
+<h3 id="GitHub-세팅"><a href="#GitHub-세팅" class="headerlink" title="GitHub 세팅"></a>GitHub 세팅</h3><p>GitHub Pages 사용을 위해서는 위에서 사용한 개인/팀의 계정에 blog라는 repository를 만들어야 합니다. GitHub 사이트에 접속하여 New를 누르고, blog라는 이름의 repository를 만들어줍시다. 이 때 README.md나 .gitignore과 같은 파일은 생성하지 않습니다.<br>이제 앞서 설치해놓은 Hexo를 GitHub repository에 업로드해야합니다. blog 폴더로 이동하여 다음의 명령어를 입력합니다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git remote add origin https://github.com/virus-lab/blog.git</span><br><span class="line">$ git add *</span><br><span class="line">$ git commit -m &quot;Initiate Hexo&quot;</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
 <p>GitHub의 repository로 이동하면 잘 업로드 된 것을 확인할 수 있습니다. 웹 상에서 dependencies 에러 메세지가 나오면 Dismiss - Risk is tolerable to this project 를 선택합시다.</p>
-<h4 id="배포-준비"><a href="#배포-준비" class="headerlink" title="배포 준비"></a>배포 준비</h4><p>GitHub Pages에 배포하기 위해 blog 디렉토리의 <code>_config.yml</code> 파일을 수정합니다.<br>위의 URL 부분은 다음과 같이 수정합니다.  </p>
+<h3 id="배포-준비"><a href="#배포-준비" class="headerlink" title="배포 준비"></a>배포 준비</h3><p>GitHub Pages에 배포하기 위해 blog 디렉토리의 <code>_config.yml</code> 파일을 수정합니다.<br>위의 URL 부분은 다음과 같이 수정합니다.  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</span><br><span class="line">url: http://&lt;개인/팀계정&gt;.github.io/blog</span><br><span class="line">root: /blog/</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
 <p>아래 Deployment 부분은 다음과 같이 추가 및 수정합니다.  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/&lt;개인/팀계정&gt;/blog.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
-<h4 id="배포"><a href="#배포" class="headerlink" title="배포"></a>배포</h4><p>먼저 다음의 명령어를 통해 deployment(배포) 패키지를 설치합니다.  </p>
+<h3 id="배포"><a href="#배포" class="headerlink" title="배포"></a>배포</h3><p>먼저 다음의 명령어를 통해 deployment(배포) 패키지를 설치합니다.  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>다음의 명령어를 통해 repository를 clean 한 후 배포합니다. d, -g 태그는 각각 deploy와 generate의 약자입니다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
@@ -202,7 +202,7 @@
 
 
 
-    <a data-url="https://PJunhyuk.github.io/blog/2018/01/12/Hexo로-GitHub-Pages에-Blog-설치/" data-id="cjcbap4vk0001ew90a8qsx40j" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="https://PJunhyuk.github.io/blog/2018/01/12/Hexo로-GitHub-Pages에-Blog-설치/" data-id="cjcbaqqr70001fz90hqr9tbiw" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
