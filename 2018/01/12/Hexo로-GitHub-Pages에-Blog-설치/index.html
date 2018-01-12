@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://PJunhyuk.github.io/blog/2018/01/12/Hexo로-GitHub-Pages에-Blog-설치/index.html">
 <meta property="og:site_name" content="PJunhyuk-blog">
 <meta property="og:description" content="GitHub Pages에 Hexo를 설치해봅시다. Hexo란?Hexo는 Node.js 기반의 블로그 프레임워크입니다. Hexo 공식 소개를 살펴보면 Hexo가 무엇인지 쉽게 알 수 있습니다.  Hexo is a fast, simple &amp;amp; powerful blog framework powered by Node.js.  DependenciesNode.j">
-<meta property="og:updated_time" content="2018-01-12T06:37:15.455Z">
+<meta property="og:updated_time" content="2018-01-12T06:44:50.420Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo로 GitHub Pages에 Blog 설치">
 <meta name="twitter:description" content="GitHub Pages에 Hexo를 설치해봅시다. Hexo란?Hexo는 Node.js 기반의 블로그 프레임워크입니다. Hexo 공식 소개를 살펴보면 Hexo가 무엇인지 쉽게 알 수 있습니다.  Hexo is a fast, simple &amp;amp; powerful blog framework powered by Node.js.  DependenciesNode.j">
@@ -69,13 +69,13 @@
                         <ul id="main-nav">
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/blog/">Inici</a>
+                                    <a class="main-nav-list-link" href="/blog/">Home</a>
                                 </li>
                             
                                         
                                     
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/blog/about/index.html">Quant a</a>
+                                    <a class="main-nav-list-link" href="/blog/about/index.html">About</a>
                                 </li>
                             
                         </ul>
@@ -83,7 +83,7 @@
                             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Cercar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -104,8 +104,8 @@
         TRANSLATION: {
             POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'categories',
-            TAGS: 'etiquetes',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/blog/',
@@ -131,7 +131,7 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    Sense categoria
+    uncategorized
     </h1>
 </div>
                         <div class="main-body-content">
@@ -191,8 +191,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/&lt;개인/팀계정&gt;/blog.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
 <h3 id="배포"><a href="#배포" class="headerlink" title="배포"></a>배포</h3><p>먼저 다음의 명령어를 통해 deployment(배포) 패키지를 설치합니다.  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>다음의 명령어를 통해 repository를 clean 한 후 배포합니다. d, -g 태그는 각각 deploy와 generate의 약자입니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
+<p>다음의 명령어를 통해 repository를 clean 한 후 배포합니다. g와 d는 각각 generate와 deploy의 약자입니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 <p>끝입니다!<br>GitHub 웹의 repository에서 branch를 gh-pages로 수정한 후 보면 방금 한 것들이 commit 되어 있는 것을 확인할 수 있습니다. 이제 <code>https://&lt;개인/팀계정&gt;.github.io/blog</code> 의 링크에 블로그가 설치된 것을 확인하실 수 있습니다!</p>
 <h6 id="References-1"><a href="#References-1" class="headerlink" title="References"></a>References</h6><p><a href="http://jooooon.com/blog/2017/09/30/create-a-personal-page-with-github/" target="_blank" rel="noopener">Github으로 개인페이지 만들기</a><br><a href="https://simhyejin.github.io/2016/06/20/hexo-github-pages/" target="_blank" rel="noopener">Hexo+GitHub pages</a><br><a href="http://futurecreator.github.io/2016/06/21/hexo-basic-usage/" target="_blank" rel="noopener">Hexo 기본 사용법</a>  </p>
 
@@ -202,7 +202,7 @@
 
 
 
-    <a data-url="https://PJunhyuk.github.io/blog/2018/01/12/Hexo로-GitHub-Pages에-Blog-설치/" data-id="cjcbk4dta0001vo907l005ssn" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="https://PJunhyuk.github.io/blog/2018/01/12/Hexo로-GitHub-Pages에-Blog-설치/" data-id="cjcbk69dr00013o90wms231u6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -282,7 +282,7 @@
                     <aside id="sidebar">
     <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
     <div class="sidebar-top">
-        <p>seguir:</p>
+        <p>follow:</p>
         <ul class="social-links">
             
                 
@@ -340,7 +340,7 @@
 <nav id="article-nav">
     
         <a href="/blog/2018/01/12/Hexo에-hueman-테마-적용하기/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">més nou</strong>
+        <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
             Hexo에 hueman 테마 적용하기
@@ -351,7 +351,7 @@
     
     
         <a href="/blog/2018/01/12/GitHub-Pages-란/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">antic</strong>
+        <strong class="article-nav-caption">older</strong>
         <p class="article-nav-title">GitHub Pages 란?</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
@@ -478,7 +478,7 @@
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">arxius</h3>
+        <h3 class="widget-title">archives</h3>
         <div class="widget">
             <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/01/">January 2018</a><span class="archive-list-count">5</span></li></ul>
         </div>
