@@ -7,8 +7,12 @@ title: PJunhyuk-blog
 subtitle: 박준혁의 개발 블로그
 description:
 author: PJunhyuk
-language:
+language: en
 timezone:
+
+# Customized
+social_links:
+  github: https://github.com/PJunhyuk
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

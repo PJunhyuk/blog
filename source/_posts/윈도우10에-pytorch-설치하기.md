@@ -16,7 +16,7 @@ pytorch는 공식적으로 linux와 macOS 환경만 지원하기 때문에, 윈�
 anaconda prompt를 관리자 권한으로 실행시켜, 다음의 명령어를 입력합니다.  
 
 ```
-> conda install -c peterjc123 pytorch
+(base) > conda install -c peterjc123 pytorch
 ```
 
 그러면 pytorch가 설치됩니다.  
@@ -26,7 +26,7 @@ anaconda prompt를 관리자 권한으로 실행시켜, 다음의 명령어를 �
 pytorch가 정상적으로 설치되었는지, 그리고 CUDA를 통해 GPU를 사용할 수 있는지를 체크하기 위해서는 다음의 명령어를 anaconda prompt에 실행해봅니다.
 
 ```
-> python
+(base) > python
 >>> import torch
 >>> torch.cuda.current_device()
 0
