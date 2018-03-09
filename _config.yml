@@ -10,10 +10,6 @@ author: PJunhyuk
 language: en
 timezone:
 
-# Customized
-social_links:
-  github: https://github.com/PJunhyuk
-
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://PJunhyuk.github.io/blog
