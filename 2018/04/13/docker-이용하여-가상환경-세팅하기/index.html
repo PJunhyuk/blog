@@ -3,23 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>윈도우에서 쉘 스크립트 사용하기 | PJunhyuk-blog</title>
+    <title>docker 이용하여 가상환경 세팅하기 | PJunhyuk-blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="윈도우에서 쉘 스크립트를 사용해봅시다! 원래 윈도우 터미널에서는 bash 명령어가 적용되지 않았습니다. 이는 맥북을 주로 쓰고, linux에서 코드를 돌리는 저에겐 굉장히 불편했는데요!(비교적 최근에) 윈도우에서도 bash 를 사용할 수 있는 WSL이 나왔다고 합니다.WSL을 설치하면 윈도우 터미널에서 bash 명령어를 입력하여 bash 명령어가 입력 가능">
+    <meta name="description" content="Docker은 제가 본 소프트웨어 중 가장 인상적인 것 중 하나입니다. 이에 대한 자세한 설명은 언젠가 기회가 될 때 하겠습니다.   이번에는 Docker를 통해 가상환경을 세팅해보도록 하겠습니다.   저는 tensorflow 가상환경을 세팅할 것입니다. 그러면 먼저 그 이미지를 받아야 합니다. 1$ nvidia-docker pull &amp;#123;유저명/이미">
 <meta property="og:type" content="article">
-<meta property="og:title" content="윈도우에서 쉘 스크립트 사용하기">
-<meta property="og:url" content="https://PJunhyuk.github.io/blog/2018/02/14/윈도우에서-쉘-스크립트-사용하기/index.html">
+<meta property="og:title" content="docker 이용하여 가상환경 세팅하기">
+<meta property="og:url" content="https://PJunhyuk.github.io/blog/2018/04/13/docker-이용하여-가상환경-세팅하기/index.html">
 <meta property="og:site_name" content="PJunhyuk-blog">
-<meta property="og:description" content="윈도우에서 쉘 스크립트를 사용해봅시다! 원래 윈도우 터미널에서는 bash 명령어가 적용되지 않았습니다. 이는 맥북을 주로 쓰고, linux에서 코드를 돌리는 저에겐 굉장히 불편했는데요!(비교적 최근에) 윈도우에서도 bash 를 사용할 수 있는 WSL이 나왔다고 합니다.WSL을 설치하면 윈도우 터미널에서 bash 명령어를 입력하여 bash 명령어가 입력 가능">
+<meta property="og:description" content="Docker은 제가 본 소프트웨어 중 가장 인상적인 것 중 하나입니다. 이에 대한 자세한 설명은 언젠가 기회가 될 때 하겠습니다.   이번에는 Docker를 통해 가상환경을 세팅해보도록 하겠습니다.   저는 tensorflow 가상환경을 세팅할 것입니다. 그러면 먼저 그 이미지를 받아야 합니다. 1$ nvidia-docker pull &amp;#123;유저명/이미">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-03-05T05:14:16.137Z">
+<meta property="og:updated_time" content="2018-04-13T05:28:29.819Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="윈도우에서 쉘 스크립트 사용하기">
-<meta name="twitter:description" content="윈도우에서 쉘 스크립트를 사용해봅시다! 원래 윈도우 터미널에서는 bash 명령어가 적용되지 않았습니다. 이는 맥북을 주로 쓰고, linux에서 코드를 돌리는 저에겐 굉장히 불편했는데요!(비교적 최근에) 윈도우에서도 bash 를 사용할 수 있는 WSL이 나왔다고 합니다.WSL을 설치하면 윈도우 터미널에서 bash 명령어를 입력하여 bash 명령어가 입력 가능">
+<meta name="twitter:title" content="docker 이용하여 가상환경 세팅하기">
+<meta name="twitter:description" content="Docker은 제가 본 소프트웨어 중 가장 인상적인 것 중 하나입니다. 이에 대한 자세한 설명은 언젠가 기회가 될 때 하겠습니다.   이번에는 Docker를 통해 가상환경을 세팅해보도록 하겠습니다.   저는 tensorflow 가상환경을 세팅할 것입니다. 그러면 먼저 그 이미지를 받아야 합니다. 1$ nvidia-docker pull &amp;#123;유저명/이미">
     
 
     
@@ -134,14 +134,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-윈도우에서-쉘-스크립트-사용하기" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-docker-이용하여-가상환경-세팅하기" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        윈도우에서 쉘 스크립트 사용하기
+        docker 이용하여 가상환경 세팅하기
         </h1>
     
 
@@ -151,8 +151,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/blog/2018/02/14/윈도우에서-쉘-스크립트-사용하기/" class="article-date">
-            <time datetime="2018-02-14T09:43:10.000Z" itemprop="datePublished">2018-02-14</time>
+        <a href="/blog/2018/04/13/docker-이용하여-가상환경-세팅하기/" class="article-date">
+            <time datetime="2018-04-13T05:02:58.000Z" itemprop="datePublished">2018-04-13</time>
         </a>
     </div>
 
@@ -161,22 +161,46 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>윈도우에서 쉘 스크립트를 사용해봅시다!</p>
-<p>원래 윈도우 터미널에서는 bash 명령어가 적용되지 않았습니다. 이는 맥북을 주로 쓰고, linux에서 코드를 돌리는 저에겐 굉장히 불편했는데요!<br>(비교적 최근에) 윈도우에서도 bash 를 사용할 수 있는 WSL이 나왔다고 합니다.<br>WSL을 설치하면 윈도우 터미널에서 bash 명령어를 입력하여 bash 명령어가 입력 가능한 창으로 들어가게 됩니다.  </p>
-<p>다만, 아직 WSL에서 윈도우의 GPU에 접근하는게 불가능하다고 합니다.<br>때문에 굉장히 기본적인 명령어들, 예를 들어 data나 model을 다운로드 받는 스크립트 정도만 WSL로 돌리고, 나머지는 그냥 윈도우에서 돌리는 방식으로 작업 방식을 구축하기로 하였습니다.  </p>
-<p>먼저, WSL은 검색을 통해 설치할 수 있습니다. 제가 참고한 블로그는 다음과 같습니다.  </p>
-<p><a href="http://sanghaklee.tistory.com/39" target="_blank" rel="noopener">[Windows 10/윈도우 10] WSL Windows 10 Bash 사용하기(lxrun)</a>  </p>
-<p>그 다음 터미널에서 <code>&gt; bash</code> 를 입력하면 WSL에 접근할 수 있습니다.  </p>
-<p>기본적인 Python 코드를 사용하기 위해, python과 python3, pip를 설치해주었습니다.  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; bash</span><br><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install python3</span><br><span class="line">$ sudo apt-get install python</span><br><span class="line">$ sudo apt-get install python-pip</span><br></pre></td></tr></table></figure>
-<h2 id="예시-DALY-dataset-다운로드"><a href="#예시-DALY-dataset-다운로드" class="headerlink" title="예시: DALY dataset 다운로드"></a>예시: DALY dataset 다운로드</h2>
+            <p><a href="http://docker.com/" target="_blank" rel="noopener">Docker</a>은 제가 본 소프트웨어 중 가장 인상적인 것 중 하나입니다. 이에 대한 자세한 설명은 언젠가 기회가 될 때 하겠습니다.  </p>
+<p>이번에는 Docker를 통해 가상환경을 세팅해보도록 하겠습니다.  </p>
+<p>저는 tensorflow 가상환경을 세팅할 것입니다. 그러면 먼저 그 이미지를 받아야 합니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvidia-docker pull &#123;유저명/이미지명:태그명&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>$ nvidia-docker pull tensorflow/tensorflow:latest-gpu-py3</code></p>
+<p>GPU를 사용하기 위해 docker 대신 nvidia-docker 명령어를 사용합니다.  </p>
+</blockquote>
+<p><code>$ docker images</code> 명령어를 통해 지금까지 받은 모든 image들을 확인할 수 있습니다.  </p>
+<p>이제 image를 받았으니 그를 실행시켜 container로 만들어야 합니다.  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvidia-docker run -it --name &#123;container명&#125; &#123;유저명/이미지명:태그명&#125; &#123;기본명령어&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>$ nvidia-docker run -it --name jgravity_HAR_1 tensorflow/tensorflow:latest-gpu-py3 /bin/bash</code>  </p>
+<p>마지막에 <code>/bin/bash</code> 를 추가한 이유는, 그러지 않으면 jupyter notebooks로 실행되기 때문입니다. 저는 그냥 bash 명령어 창을 원하므로, 이렇게 설정하였습니다.  </p>
+</blockquote>
+<p>그러면 터미널 앞의 명령어가 바뀌는 것을 통해 container에 접속했음을 확인할 수 있습니다!  </p>
+<p>이제 container 에 나왔다가 다시 접속해봅시다!  </p>
+<p>Ctrl+D를 통해 현재 container에서 나올 수 있습니다. <code>$ nvidia-docker ps</code> 명령어를 통해 현재 구현되어 있는 모든 container를 확인할 수 있습니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvidia-docker rm &#123;container명&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>container 삭제</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvidia-docker start &#123;container명&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>container 시작</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvidia-docker attach &#123;container명&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>container 접근</p>
+</blockquote>
+<p>그러므로, <code>start</code> - <code>attach</code> 명령어를 차례로 사용함으로써 해당 container에 접근할 수 있습니다.  </p>
+<p>이제 docker을 이용하여 가상환경 세팅을 완료하였습니다! 신나게 코딩을 해봅시다:)  </p>
+
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="https://PJunhyuk.github.io/blog/2018/02/14/윈도우에서-쉘-스크립트-사용하기/" data-id="cjfxs5iy30006pp907amrdbyo" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://PJunhyuk.github.io/blog/2018/04/13/docker-이용하여-가상환경-세팅하기/" data-id="cjfxs5ixy0002pp90jk9immkl" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -243,7 +267,7 @@
     <section id="comments">
     
       
-    <div class="fb-comments" data-width="100%" data-href="https://PJunhyuk.github.io/blog/2018/02/14/윈도우에서-쉘-스크립트-사용하기/" data-num-posts="5"></div>
+    <div class="fb-comments" data-width="100%" data-href="https://PJunhyuk.github.io/blog/2018/04/13/docker-이용하여-가상환경-세팅하기/" data-num-posts="5"></div>
 
 
     
@@ -288,20 +312,20 @@
         
 <nav id="article-nav">
     
-        <a href="/blog/2018/03/05/윈도우10에-pytorch-설치하기/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/blog/2018/04/13/docker-contaniner에-개발환경-세팅하기/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            윈도우10에 pytorch 설치하기
+            docker contaniner에 개발환경 세팅하기
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/blog/2018/02/07/윈도우10에-tensorflow-gpu-작업-환경-세팅하기/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/blog/2018/04/13/LINUX-작업환경-세팅하기/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">윈도우10에 tensorflow-gpu 작업 환경 세팅하기</p>
+        <p class="article-nav-title">LINUX 작업환경 세팅하기</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
