@@ -67,3 +67,4 @@ numpy module이 설치되었습니다! 이런 식으로 세팅을 해나가면 �
 [리눅스 종류 확인, 리눅스 버전 확인](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_%EC%A2%85%EB%A5%98_%ED%99%95%EC%9D%B8,_%EB%A6%AC%EB%88%85%EC%8A%A4_%EB%B2%84%EC%A0%84_%ED%99%95%EC%9D%B8)  
 [8 commands to check cpu information on Linux](https://www.binarytides.com/linux-cpu-information/)  
 [How to get the GPU info?](https://askubuntu.com/questions/5417/how-to-get-the-gpu-info)  
+[.5 시작하기 - Git 최초 설정](https://git-scm.com/book/ko/v1/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%B5%9C%EC%B4%88-%EC%84%A4%EC%A0%95)  
