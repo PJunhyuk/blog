@@ -59,4 +59,15 @@ linux에 python-opencv를 설치하는 것은 몹시 귀찮은 일입니다ㅠ�
 # pip install --upgrade pip
 ```
 
-#### tensorflow
+## CUDA
+
+#### CUDA
+
+```
+# apt-get install wget
+# wget https://developer.nvidia.com/compute/cuda/9.1/Prod/local_installers/cuda_9.1.85_387.26_linux
+```
+
+## References
+
+[Ubuntu 16 CUDA Toolkit 8.0 설치](http://gusrb.tistory.com/6)  
