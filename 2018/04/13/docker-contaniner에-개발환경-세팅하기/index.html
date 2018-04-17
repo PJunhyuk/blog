@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="PJunhyuk-blog">
 <meta property="og:description" content="docker로 만든 container에 개발환경을 세팅해봅시다.   Tested EnvironmentsImage tensorflow/tensorflow:latest-gpu-py3  Git설치1# apt-get update  먼저 apt-get을 업데이트합니다.    1# apt-get install git 확인1# git --version  git vers">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-04-13T09:58:09.532Z">
+<meta property="og:updated_time" content="2018-04-13T14:12:42.882Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker contaniner에 개발환경 세팅하기">
 <meta name="twitter:description" content="docker로 만든 container에 개발환경을 세팅해봅시다.   Tested EnvironmentsImage tensorflow/tensorflow:latest-gpu-py3  Git설치1# apt-get update  먼저 apt-get을 업데이트합니다.    1# apt-get install git 확인1# git --version  git vers">
@@ -184,14 +184,16 @@
 <p>You are using pip version 9.0.1, however version 9.0.3 is available. 해결  </p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># pip install --upgrade pip</span><br></pre></td></tr></table></figure>
-<h4 id="tensorflow"><a href="#tensorflow" class="headerlink" title="tensorflow"></a>tensorflow</h4>
+<h2 id="CUDA"><a href="#CUDA" class="headerlink" title="CUDA"></a>CUDA</h2><h4 id="CUDA-1"><a href="#CUDA-1" class="headerlink" title="CUDA"></a>CUDA</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># apt-get install wget</span><br><span class="line"># wget https://developer.nvidia.com/compute/cuda/9.1/Prod/local_installers/cuda_9.1.85_387.26_linux</span><br></pre></td></tr></table></figure>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="http://gusrb.tistory.com/6" target="_blank" rel="noopener">Ubuntu 16 CUDA Toolkit 8.0 설치</a>  </p>
+
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="https://PJunhyuk.github.io/blog/2018/04/13/docker-contaniner에-개발환경-세팅하기/" data-id="cjfxs5ixv0001pp9072exns69" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://PJunhyuk.github.io/blog/2018/04/13/docker-contaniner에-개발환경-세팅하기/" data-id="cjg33f97x0003j690da16jvd5" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -303,6 +305,16 @@
         
 <nav id="article-nav">
     
+        <a href="/blog/2018/04/17/TensorFlow-튜토리얼/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            TensorFlow 튜토리얼
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
     
         <a href="/blog/2018/04/13/docker-이용하여-가상환경-세팅하기/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
@@ -321,6 +333,15 @@
         <h3 class="widget-title">recents</h3>
         <div class="widget">
             <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/blog/2018/04/17/TensorFlow-튜토리얼/" class="title">TensorFlow 튜토리얼</a></p>
+                            <p class="item-date"><time datetime="2018-04-17T03:10:49.000Z" itemprop="datePublished">2018-04-17</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -358,15 +379,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/blog/2018/03/05/윈도우10에-pytorch-설치하기/" class="title">윈도우10에 pytorch 설치하기</a></p>
-                            <p class="item-date"><time datetime="2018-03-05T05:16:21.000Z" itemprop="datePublished">2018-03-05</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -379,7 +391,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/03/">March 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/02/">February 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/01/">January 2018</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/03/">March 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/02/">February 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/01/">January 2018</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
