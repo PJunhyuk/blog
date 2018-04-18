@@ -3,23 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>윈도우에서 쉘 스크립트 사용하기 | PJunhyuk-blog</title>
+    <title>윈도우10 HOME 에 Docker 설치하기 | PJunhyuk-blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="윈도우에서 쉘 스크립트를 사용해봅시다! 원래 윈도우 터미널에서는 bash 명령어가 적용되지 않았습니다. 이는 맥북을 주로 쓰고, linux에서 코드를 돌리는 저에겐 굉장히 불편했는데요!(비교적 최근에) 윈도우에서도 bash 를 사용할 수 있는 WSL이 나왔다고 합니다.WSL을 설치하면 윈도우 터미널에서 bash 명령어를 입력하여 bash 명령어가 입력 가능">
+    <meta name="description" content="윈도우10 HOME 에 Docker 를 설치해봅시다. Docker 에서 공식적으로 제공하는 윈도우10 용 클라이언트를 사용하기 위해서는 윈도우의 버전이 PRO 이상이어야 합니다. 그래야 HYPER-V를 사용할 수 있기 때문입니다. 저도 원래 이거 때문에 윈도우10 PRO 버전을 사용하였었지만, 이번에 새로 산 컴퓨터는 윈도우10 HOME 버전이더라구요. 윈">
 <meta property="og:type" content="article">
-<meta property="og:title" content="윈도우에서 쉘 스크립트 사용하기">
-<meta property="og:url" content="https://PJunhyuk.github.io/blog/2018/02/14/윈도우에서-쉘-스크립트-사용하기/index.html">
+<meta property="og:title" content="윈도우10 HOME 에 Docker 설치하기">
+<meta property="og:url" content="https://PJunhyuk.github.io/blog/2018/04/18/윈도우10 HOME 에 Docker 설치하기/index.html">
 <meta property="og:site_name" content="PJunhyuk-blog">
-<meta property="og:description" content="윈도우에서 쉘 스크립트를 사용해봅시다! 원래 윈도우 터미널에서는 bash 명령어가 적용되지 않았습니다. 이는 맥북을 주로 쓰고, linux에서 코드를 돌리는 저에겐 굉장히 불편했는데요!(비교적 최근에) 윈도우에서도 bash 를 사용할 수 있는 WSL이 나왔다고 합니다.WSL을 설치하면 윈도우 터미널에서 bash 명령어를 입력하여 bash 명령어가 입력 가능">
+<meta property="og:description" content="윈도우10 HOME 에 Docker 를 설치해봅시다. Docker 에서 공식적으로 제공하는 윈도우10 용 클라이언트를 사용하기 위해서는 윈도우의 버전이 PRO 이상이어야 합니다. 그래야 HYPER-V를 사용할 수 있기 때문입니다. 저도 원래 이거 때문에 윈도우10 PRO 버전을 사용하였었지만, 이번에 새로 산 컴퓨터는 윈도우10 HOME 버전이더라구요. 윈">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-03-05T05:14:16.137Z">
+<meta property="og:updated_time" content="2018-04-18T10:00:37.849Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="윈도우에서 쉘 스크립트 사용하기">
-<meta name="twitter:description" content="윈도우에서 쉘 스크립트를 사용해봅시다! 원래 윈도우 터미널에서는 bash 명령어가 적용되지 않았습니다. 이는 맥북을 주로 쓰고, linux에서 코드를 돌리는 저에겐 굉장히 불편했는데요!(비교적 최근에) 윈도우에서도 bash 를 사용할 수 있는 WSL이 나왔다고 합니다.WSL을 설치하면 윈도우 터미널에서 bash 명령어를 입력하여 bash 명령어가 입력 가능">
+<meta name="twitter:title" content="윈도우10 HOME 에 Docker 설치하기">
+<meta name="twitter:description" content="윈도우10 HOME 에 Docker 를 설치해봅시다. Docker 에서 공식적으로 제공하는 윈도우10 용 클라이언트를 사용하기 위해서는 윈도우의 버전이 PRO 이상이어야 합니다. 그래야 HYPER-V를 사용할 수 있기 때문입니다. 저도 원래 이거 때문에 윈도우10 PRO 버전을 사용하였었지만, 이번에 새로 산 컴퓨터는 윈도우10 HOME 버전이더라구요. 윈">
     
 
     
@@ -134,14 +134,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-윈도우에서-쉘-스크립트-사용하기" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-윈도우10 HOME 에 Docker 설치하기" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        윈도우에서 쉘 스크립트 사용하기
+        윈도우10 HOME 에 Docker 설치하기
         </h1>
     
 
@@ -151,8 +151,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/blog/2018/02/14/윈도우에서-쉘-스크립트-사용하기/" class="article-date">
-            <time datetime="2018-02-14T09:43:10.000Z" itemprop="datePublished">2018-02-14</time>
+        <a href="/blog/2018/04/18/윈도우10 HOME 에 Docker 설치하기/" class="article-date">
+            <time datetime="2018-04-18T07:54:42.000Z" itemprop="datePublished">2018-04-18</time>
         </a>
     </div>
 
@@ -161,22 +161,20 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>윈도우에서 쉘 스크립트를 사용해봅시다!</p>
-<p>원래 윈도우 터미널에서는 bash 명령어가 적용되지 않았습니다. 이는 맥북을 주로 쓰고, linux에서 코드를 돌리는 저에겐 굉장히 불편했는데요!<br>(비교적 최근에) 윈도우에서도 bash 를 사용할 수 있는 WSL이 나왔다고 합니다.<br>WSL을 설치하면 윈도우 터미널에서 bash 명령어를 입력하여 bash 명령어가 입력 가능한 창으로 들어가게 됩니다.  </p>
-<p>다만, 아직 WSL에서 윈도우의 GPU에 접근하는게 불가능하다고 합니다.<br>때문에 굉장히 기본적인 명령어들, 예를 들어 data나 model을 다운로드 받는 스크립트 정도만 WSL로 돌리고, 나머지는 그냥 윈도우에서 돌리는 방식으로 작업 방식을 구축하기로 하였습니다.  </p>
-<p>먼저, WSL은 검색을 통해 설치할 수 있습니다. 제가 참고한 블로그는 다음과 같습니다.  </p>
-<p><a href="http://sanghaklee.tistory.com/39" target="_blank" rel="noopener">[Windows 10/윈도우 10] WSL Windows 10 Bash 사용하기(lxrun)</a>  </p>
-<p>그 다음 터미널에서 <code>&gt; bash</code> 를 입력하면 WSL에 접근할 수 있습니다.  </p>
-<p>기본적인 Python 코드를 사용하기 위해, python과 python3, pip를 설치해주었습니다.  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; bash</span><br><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install python3</span><br><span class="line">$ sudo apt-get install python</span><br><span class="line">$ sudo apt-get install python-pip</span><br></pre></td></tr></table></figure>
-<h2 id="예시-DALY-dataset-다운로드"><a href="#예시-DALY-dataset-다운로드" class="headerlink" title="예시: DALY dataset 다운로드"></a>예시: DALY dataset 다운로드</h2>
+            <p>윈도우10 HOME 에 Docker 를 설치해봅시다. Docker 에서 공식적으로 제공하는 윈도우10 용 클라이언트를 사용하기 위해서는 윈도우의 버전이 PRO 이상이어야 합니다. 그래야 HYPER-V를 사용할 수 있기 때문입니다. 저도 원래 이거 때문에 윈도우10 PRO 버전을 사용하였었지만, 이번에 새로 산 컴퓨터는 윈도우10 HOME 버전이더라구요. 윈도우 버전을 업그레이드할까, 다른 방법을 찾아볼까 하다가 후자를 선택하기로 했습니다.  </p>
+<p>윈도우10 HOME을 위한 Docker 는 <a href="https://docs.docker.com/toolbox/toolbox_install_windows/" target="_blank" rel="noopener">Docker Toolbox</a>를 통해 다운로드 받으실 수 있습니다.  </p>
+<p>자세한 설치는 <a href="https://gwonsungjun.github.io/how%20to%20install/2018/01/28/DockerInstall/" target="_blank" rel="noopener">Windows 10 Home에서 Docker 설치 하기</a>에 아주 잘 나와있습니다!  </p>
+<p>저는 추가로 <a href="https://kitematic.com/" target="_blank" rel="noopener">Kitematic</a>을 사용합니다. Docker를 통해 받은 이미지들을 관리할 수 있는 GUI 툴이라고 생각하면 될 것 같습니다.  </p>
+<p>뭐 여하튼, cmd 창에 <code>$ docker</code> 명령어를 입력하였을 때 정상적으로 실행된다면 설치가 완료된 것입니다.  </p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://gwonsungjun.github.io/how%20to%20install/2018/01/28/DockerInstall/" target="_blank" rel="noopener">Windows 10 Home에서 Docker 설치 하기</a>  </p>
+
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="https://PJunhyuk.github.io/blog/2018/02/14/윈도우에서-쉘-스크립트-사용하기/" data-id="cjg52fvhf0008df90uobzk9t6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://PJunhyuk.github.io/blog/2018/04/18/윈도우10 HOME 에 Docker 설치하기/" data-id="cjg52fvhb0005df90qzuwuc07" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -243,7 +241,7 @@
     <section id="comments">
     
       
-    <div class="fb-comments" data-width="100%" data-href="https://PJunhyuk.github.io/blog/2018/02/14/윈도우에서-쉘-스크립트-사용하기/" data-num-posts="5"></div>
+    <div class="fb-comments" data-width="100%" data-href="https://PJunhyuk.github.io/blog/2018/04/18/윈도우10 HOME 에 Docker 설치하기/" data-num-posts="5"></div>
 
 
     
@@ -288,20 +286,20 @@
         
 <nav id="article-nav">
     
-        <a href="/blog/2018/03/05/윈도우10에-pytorch-설치하기/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/blog/2018/04/18/어떤-딥러닝-프레임워크를-써볼까-00_인트로/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            윈도우10에 pytorch 설치하기
+            어떤 딥러닝 프레임워크를 써볼까? 00_인트로
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/blog/2018/02/07/윈도우10에-tensorflow-gpu-작업-환경-세팅하기/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/blog/2018/04/17/어떤-딥러닝-프레임워크를-써볼까-01.텐서플로우/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">윈도우10에 tensorflow-gpu 작업 환경 세팅하기</p>
+        <p class="article-nav-title">어떤 딥러닝 프레임워크를 써볼까? 01_텐서플로우</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
